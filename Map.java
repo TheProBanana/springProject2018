@@ -2,7 +2,7 @@ package project01;
 
 /**
  *
- * @author skycr
+ * @author Skylor Criqui
  */
 
 public class Map {

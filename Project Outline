@@ -1,33 +1,36 @@
-Region Map Simulation:
+Space trading sim:
 
 Add anything that you want, ask me if you are unsure if it would be okay to add
 
 Objects:
-  City(Terrain) - Large town, has higher population and more resources
-  Town(terrain) - Low population and resources
-  Mountains(Terrain) - blocks trade routes
-  Water(Resource) - provides transportation and classified as resource
-  Wood(Resource) -  Allows for expansion of cities and towns
+  Planet(Terrain) - Contains cities and resources
+  Cities(Terrain) - Place to trade and buy items
+  Spacestation(Terrain) - Place to trade and buy items
+  Ooutpost(Terrain) - Place to trade items
+  Space Ship(Vehicle) - UIsed as transportation
+  Water(Resource) - If a planet has water, it has the possiblity of harbouring life; rare trade item
+  Stone(Resource) - Helps build civilizations; trade item
   Metal(Resource) - Could have subclasses like Iron, Gold, Silber, etc.
-  Currency - certain starting amount for region. The more resources in a region, the larger the starting balance is for the region
+  Currency - certain starting amount for solar system. 
+             The more resources in a system, the larger the starting balance is for the system
   
 Map:
   3D
-  Generate cities, towns, landscape, and resources randomly
+  Generate Planets, Cities, Spacestations, and Resources randomly
   Generate size of map randomly
 
 I/O:
   Windowed, adjustable
   2D Graphics
   Use Sprites if possible for symbols, ASCII if all else fails
-  Will be simulation for now, if we have time left, we can create some user interaction to make it into somewhat of a game
+  Platformer controls(W moves forward, S brakes/reverses, A turn lefts, D turns right, Space to shoot, and E to pick up things) 
   
-  TODO:
-    Create City object
-    Modify Village object into a town object
-    Create Water object
-    Make map 3D instead of 2D
+TODO:
+  Create Planet object
+  Modify Village object into a City object
+  Make map 3D instead of 2D
     
-  Remember to commit your version to github after you complete a TODO task. If unsure what to do, ask. I am usually off of work on
-  Tuesdays and Thursdays. I have classes in the morning everyday and don't work until 5 on the days that I do work and I usually 
-  work till 12 a.m., but you can always text me, even during work
+Remember to commit your version to github as well as delete the TODO item after you complete a TODO task. 
+If unsure what to do, ask. I am usually off of work on Tuesdays and Thursdays. 
+I have classes in the morning everyday and don't work until 5 on the days that I do work and I usually 
+work till 12 a.m., but you can always text me, even during work

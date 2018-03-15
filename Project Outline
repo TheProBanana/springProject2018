@@ -15,7 +15,7 @@ Objects:
              The more resources in a system, the larger the starting balance is for the system
   
 Map:
-  3D
+  2D
   Generate Planets, Cities, Spacestations, and Resources randomly
   Generate size of map randomly
 
@@ -26,12 +26,16 @@ I/O:
   Platformer controls(W moves forward, S brakes/reverses, A turn lefts, D turns right, Space to shoot, and E to pick up things) 
   
 TODO(no specific order):
-  Create Planet object
-  Modify Village object into a City object
-  Make map 3D instead of 2D
-  Create Ship object
-  Create a GUI
-  Update files to be GUI compatible
+  Back-end:
+    Create a GUI
+    Update files to be GUI compatible
+  
+  Front-end:
+    Create Planet object
+    Modify Village object into a City object
+    Create Ship object
+  
+  
     
 Remember to commit your version to github as well as delete the TODO item after you complete a TODO task. 
 If unsure what to do, ask. I am usually off of work on Tuesdays and Thursdays. 

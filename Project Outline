@@ -7,7 +7,7 @@ Objects:
   Cities(Terrain) - Place to trade and buy items
   Spacestation(Terrain) - Place to trade and buy items
   Ooutpost(Terrain) - Place to trade items
-  Space Ship(Vehicle) - UIsed as transportation
+  Space Ship(Vehicle) - Used as transportation
   Water(Resource) - If a planet has water, it has the possiblity of harbouring life; rare trade item
   Stone(Resource) - Helps build civilizations; trade item
   Metal(Resource) - Could have subclasses like Iron, Gold, Silber, etc.
@@ -25,10 +25,13 @@ I/O:
   Use Sprites if possible for symbols, ASCII if all else fails
   Platformer controls(W moves forward, S brakes/reverses, A turn lefts, D turns right, Space to shoot, and E to pick up things) 
   
-TODO:
+TODO(no specific order):
   Create Planet object
   Modify Village object into a City object
   Make map 3D instead of 2D
+  Create Ship object
+  Create a GUI
+  Update files to be GUI compatible
     
 Remember to commit your version to github as well as delete the TODO item after you complete a TODO task. 
 If unsure what to do, ask. I am usually off of work on Tuesdays and Thursdays. 

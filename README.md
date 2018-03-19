@@ -1,3 +1,7 @@
 Region Simulation
 
-This project is a space trading game where there is a solar system filled by a random amount of planets that have different resources and cities that you can go to adn trade with. It is a group project for a college class.
+* Trading Amongst Stars is a digital board game that is focused on trading amongst space civilizations. 
+* The goal of the game is to have the most money by the end of the game. 
+* Trading Amongst Stars is turn-based with a set amount of rounds per turn.
+* The rounds are: Organize, Move, Trade, Organize, Combat
+* There are two teams: humans and (insert alien race name here).

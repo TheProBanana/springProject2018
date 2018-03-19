@@ -1,19 +1,40 @@
-Space trading sim:
+Space trading board game:
 
-Add anything that you want, ask me if you are unsure if it would be okay to add
+KEY:
+"-" symbolizes tasks that need to be completed
+"+" symoblizes tasks that are completed
+"*" symbolizes notes
 
-Objects:
-  Planet(Terrain) - Contains cities and resources
-  Cities(Terrain) - Place to trade and buy items
-  Spacestation(Terrain) - Place to trade and buy items
-  Ooutpost(Terrain) - Place to trade items
-  Space Ship(Vehicle) - Used as transportation
-  Water(Resource) - If a planet has water, it has the possiblity of harbouring life; rare trade item
-  Stone(Resource) - Helps build civilizations; trade item
-  Metal(Resource) - Could have subclasses like Iron, Gold, Silber, etc.
-  Currency - certain starting amount for solar system. 
-             The more resources in a system, the larger the starting balance is for the system
-  
+Description:
+* (Insert Name of Game Here) is a digital board game that is focused on trading amongst space civilizations. 
+* The goal of the game is to have the most money by the end of the game. 
+* The board game is turn-based with a set amount of rounds per turn.
+* The rounds are: Organize, Move, Trade, Organize, Combat
+* There are two teams: humans and (insert alien race name here).
+
+Goal of Project:
+- Fully working GUI
+- Fully functional Map
+- Player and Computer movement fully functional
+- Trading System fully functional
+- Rounds fully functional
+
+TODO:
+Front-end(Allison):
+- Create Space Ship Object: Player and computers token; signifies location; used as transportation to cities and planets
+- Create Planet Object: Terrain; contains cities and resources; can/cannot be habitated
+- Create City Object: Terrain; Place to trade, recruit, and repair ship
+- Create Spacestation Object: same as city, but in open space
+- Create Species (Humans and Alien Race):
+  - Population
+  - Money
+  - 
+
+Back-end(Skylor):
+- Main GUI
+- Map
+- Movement
+ 
 Map:
   2D
   Generate Planets, Cities, Spacestations, and Resources randomly
@@ -24,18 +45,6 @@ I/O:
   2D Graphics
   Use Sprites if possible for symbols, ASCII if all else fails
   Platformer controls(W moves forward, S brakes/reverses, A turn lefts, D turns right, Space to shoot, and E to pick up things) 
-  
-TODO(no specific order):
-  Back-end:
-    Create a GUI
-    Update files to be GUI compatible
-  
-  Front-end:
-    Create Planet object
-    Create City object
-    Create Ship object
-  
-  
     
 Remember to commit your version to github as well as delete the TODO item after you complete a TODO task. 
 If unsure what to do, ask. I am usually off of work on Tuesdays and Thursdays. 

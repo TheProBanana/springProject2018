@@ -5,3 +5,10 @@ Region Simulation
 * Trading Amongst Stars is turn-based with a set amount of rounds per turn.
 * The rounds are: Organize, Move, Trade, Organize, Combat
 * There are two teams: humans and (insert alien race name here).
+
+Goal of Project:
+* Fully working GUI
+* Fully functional Map
+* Player and Computer movement fully functional
+* Trading System fully functional
+* Rounds fully functional

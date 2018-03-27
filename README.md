@@ -9,6 +9,6 @@ Space Trading Simulation
 Goal of Project:
 * Fully working GUI
 * Fully functional Map
-* Player and Computer movement fully functional
-* Trading System fully functional
-* Rounds fully functional
+* Player and Computer turn-based movement
+* Trading System
+* Rounds

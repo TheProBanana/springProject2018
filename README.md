@@ -3,7 +3,7 @@ Space Trading Simulation
 * Trading Amongst Stars is a turn-based video game that uses a multiple rounds per turn and is focused on trading.
 * The rounds are: Organize Inventory, Move, Trade, Organize Inventory, Combat
 * Having an organized inventory will be crucial to win. A better organized inventory will be able to transport more items, leading to more money.
-* There are two teams: humans and (insert alien race name here).
+* There are two teams: humans and aliens.
 * The goal of the game is to have the most money by the end. 
 
 Goal of Project:

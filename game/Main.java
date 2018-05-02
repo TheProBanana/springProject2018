@@ -90,12 +90,17 @@ public class Main extends Application {
                 players.forEach(player -> player.updateUI());
                 planets.forEach(player -> player.updateUI());
 
-                Button btnTrade = new Button("Trade?");
+                Button btTrade = new Button("Trade?");
                 if (collision) {
-                    root.getChildren().add(btnTrade);
-                }
-                if (!collision) {
-                    root.getChildren().remove(btnTrade);
+                    root.getChildren().add(btTrade);
+                    btTrade.requestFocus();
+                    btTrade.setOnMousePressed(e -> {
+                        try {
+                            openTradeUI(stage);
+                        } catch (Exception ex) {
+                            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    });
                 }
             }
         };

@@ -35,7 +35,8 @@ public class TradeUI extends Application {
         pane.add(lbYourBalance, 0, 0);
         pane.add(tfYourBalance, 1, 0);
         pane.add(new Label("Item: "), 0, 1);
-        pane.add(new Label("Iron"), 1, 1);
+        String item1 = getItem1();
+        pane.add(new Label(item1), 1, 1);
         pane.add(lbPrice, 0, 2);
         pane.add(lbPrice1, 1, 2);
         pane.add(lbTheirBalance, 0, 3);

@@ -13,29 +13,27 @@ public class CreatePlanet{
     private final int radius = 1; //set defaults for no arg
     private String name = " ";
     private String  item1 = " ";
-    private String item2= " ";
+   
     
     public CreatePlanet() {}
     
     //public void setRadius(int radius) {
     //    this.radius = radius;
     //}
-    public void setName(String name) {
+    public void setName(String name) { //set name of planet
         this.name = name;
     }
-    public void setItem1(String item){
+    public void setItem1(String item){ //set resource for planet
         this.item1 = item;
     }
-    public void setItem2(String item){
-        this.item2 = item;
-    }
-    public int getRadius(){
+  
+    public int getRadius(){ //sets the radius of each plane to 1
         return radius;
     }
-    public String getName(){
+    public String getName(){  //return a string with plant name
         return name;
     }
-    public String getItem1(){
+    public String getItem1(){   //returns string with resource name
         return item1;
     }
 }

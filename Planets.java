@@ -18,8 +18,7 @@ public class Planets extends CreatePlanet{
         ArrayList<String> items = new ArrayList<>(); //creating a list to hold items that a planet may have
         
         //add names
-        planets.add("Wahear"); //come up with names not in our solar system so not bound by certain
-                            //aesthetic expectation
+        planets.add("Wahear"); //populate arrayList with possible planet names
         planets.add("Poald");
         planets.add("Zerwad");
         planets.add("Ulaplea");
@@ -27,7 +26,7 @@ public class Planets extends CreatePlanet{
         planets.add("Ezvit");
         
         //add items
-        items.add("diamonds");
+        items.add("diamonds");  //populate a separate arrayList with the names of a resource each planet might have
         items.add("carbon");
         items.add("water");
         items.add("gold");
@@ -37,17 +36,15 @@ public class Planets extends CreatePlanet{
         items.add("nuclear energy");
         items.add("silver");
         
-        //return 3 random planet names
+        // to determine planet name
         String planet1 = randomPlanets(planets);
-        String planet2 = randomPlanets(planets);
-        String planet3 = randomPlanets(planets);
         
-        //return 3 random items for each planet to possess
+        //to get a random item for planet to possess
         String item1 = randomItems(items);
           
     }
     
-  
+  //these methods obtain a random number within the arrayList as an index, use the index to get the name/resource, and pass it back
     
     public static String randomPlanets(ArrayList planets) {
         int index = (-1 + (int)Math.random())*7;

@@ -68,7 +68,8 @@ public class Main extends Application {
         loadGame();
 
         createScoreLayer();
-        createPlayer();
+
+            createPlayer();
         AnimationTimer gameLoop = new AnimationTimer() {
         LongValue time = new LongValue( System.nanoTime() );
         longValue maxTime = new LongValue(time + 300,000,000,000);
@@ -107,6 +108,8 @@ public class Main extends Application {
                     });
                 }
             }
+                else{
+                }
         };
         gameLoop.start();
         

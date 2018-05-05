@@ -68,6 +68,7 @@ public class TradeUI extends Application {
             yourBalance = yourBalance - price;
             theirBalance = theirBalance + price;
             if (yourBalance >= 0) {
+
                 tfYourBalance.setText(Double.toString(yourBalance));
                 tfTheirBalance.setText(Double.toString(theirBalance));
             } else {
@@ -118,6 +119,12 @@ public class TradeUI extends Application {
             alert.show();
         }
     }
+    public double getYourBalance() {
+        return yourBalance;
+    }
+    public double getTheirBalance() {
+        return theirBalance;
+    } 
     
     public static void main(String[] args) {
         launch(args);

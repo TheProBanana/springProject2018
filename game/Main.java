@@ -65,7 +65,8 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
-        loadGame();
+
+            loadGame();
 
         createScoreLayer();
 
@@ -109,6 +110,11 @@ public class Main extends Application {
                 }
             }
                 else{
+                    gameLoop.stop();
+                    Text finalText = new Text(20, 20, "Your score is"+score);
+                    finalText.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.ITALIC, 15));
+                    scoreLayer.getChildren().add(finalText);
+                    
                 }
         };
         gameLoop.start();

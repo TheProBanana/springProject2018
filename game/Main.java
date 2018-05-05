@@ -54,7 +54,7 @@ public class Main extends Application {
     Scene scene;
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+        public void start(Stage primaryStage) throws Exception {
         Group root = new Group();
         playfieldLayer = new Pane();
         scoreLayer = new Pane();
@@ -70,9 +70,13 @@ public class Main extends Application {
         createScoreLayer();
         createPlayer();
         AnimationTimer gameLoop = new AnimationTimer() {
+        LongValue time = new LongValue( System.nanoTime() );
+        longValue maxTime = new LongValue(time + 300,000,000,000);
 
             @Override
+           
             public void handle(long now) {
+                if(time < maxTime){
                 // player input
                 players.forEach(player -> player.processInput());
 
@@ -105,7 +109,9 @@ public class Main extends Application {
             }
         };
         gameLoop.start();
-    }
+        
+    };
+   }
 
     private void loadGame() {
         playerImage = new Image(getClass().getResource("player.bmp").toExternalForm());

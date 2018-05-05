@@ -67,8 +67,7 @@ public class Main extends Application {
 
 
             loadGame();
-
-        createScoreLayer();
+          createScoreLayer();
 
             createPlayer();
         AnimationTimer gameLoop = new AnimationTimer() {
@@ -110,8 +109,8 @@ public class Main extends Application {
             }
                 else{
                     gameLoop.stop();
-                    double score = getYourScore();
-                    double theirScore = getTheirScore();
+                    double score = getYourBalance();
+                    double theirScore = getTheirBalance();
                     Text finalText = new Text(20, 20, "Your score is"+score);
                     finalText.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.ITALIC, 15));
                     scoreLayer.getChildren().add(finalText);

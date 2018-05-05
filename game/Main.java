@@ -74,7 +74,6 @@ public class Main extends Application {
         AnimationTimer gameLoop = new AnimationTimer() {
         LongValue time = new LongValue( System.nanoTime() );
         longValue maxTime = new LongValue(time + 300,000,000,000);
-
             @Override
            
             public void handle(long now) {
@@ -111,10 +110,22 @@ public class Main extends Application {
             }
                 else{
                     gameLoop.stop();
+                    double score = getYourScore();
+                    double theirScore = getTheirScore();
                     Text finalText = new Text(20, 20, "Your score is"+score);
                     finalText.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.ITALIC, 15));
                     scoreLayer.getChildren().add(finalText);
                     
+                    if( score > theirScore){
+                        Text win = new Text (30, 20, "You win!");
+                        win.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.ITALIC, 15));
+                        scoreLayer.getChildren().add(win);
+                    }
+                    else {
+                        Text lose = new Text(30, 20, "You lose."); 
+                        win.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.ITALIC, 15));
+                        scoreLayer.getChildren().add(lose);
+                    }  
                 }
         };
         gameLoop.start();
